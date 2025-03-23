@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addons><addon id="repository.blackprogram" name="Black Program" version="1.0" provider-name="blackprogram-02">
+    <extension point="xbmc.addon.repository" name="Example Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/blackprogram-02/repository.blackprogram/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/blackprogram-02/repository.blackprogram/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/blackprogram-02/repository.blackprogram/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Black Program</summary>
+        <description>Repo for Black Program addons</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon><addon id="script.ai.list" name="AI List Curator" version="1.0.2" provider-name="woutbelt">
+    <backwards-compatibility abi="12.0" />
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Uses AI to manage personalized TMDB lists</summary>
+        <description lang="en">This addon allows users to link their Trakt and TMDB accounts to manage custom lists. With the power of Gemini AI, it provides personalized recommendations and automates list updates based on user preferences. Ideal for users looking to enhance their media organization and discovery experience</description>
+        <license>GNU General Public License, v2</license>
+        <language />
+        <forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
+        <source>https://github.com/zag2me/script.hello.world</source>
+        <website>Kodi.tv</website>
+        <email>zag@kodi.org</email>
+        <assets>
+            <icon>icon.png</icon>
+            <news>Updated the addon to use new addon.xml metadata</news>
+        </assets>
+    </extension>
+</addon></addons>
