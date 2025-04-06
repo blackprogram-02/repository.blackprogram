@@ -1,0 +1,3 @@
+[submodule "repo/repository.blackprogram/script.ai.list"]
+	path = repo/repository.blackprogram/script.ai.list
+	url = https://github.com/blackprogram-02/script.ai.list.git
